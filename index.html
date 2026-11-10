@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0b0908">
+  <meta name="theme-color" content="#ffffff">
 
   <meta name="description" content="شركة الريان لصيانة وتنظيف الأفران بجدة. تواصل معنا للاتصال أو عبر واتساب على 0560349982.">
   <title>شركة الريان لصيانة وتنظيف الأفران بجدة</title>
@@ -191,6 +191,115 @@
       .mobile .btn .wa-label{font-size:inherit}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+    /* White and gold appearance for the standalone Al Rayyan website. */
+    :root{
+      --bg:#ffffff;
+      --bg2:#fffaf2;
+      --gold:#815a1f;
+      --gold-strong:#916016;
+      --gold-soft:#b3945d;
+      --line:rgba(145,103,39,.24);
+      --text:#2c251b;
+      --muted:#665b4b;
+    }
+    html{background:#ffffff}
+    body{
+      color:var(--text);
+      background:radial-gradient(circle at 86% 8%,rgba(223,186,117,.13),transparent 32%),
+                 linear-gradient(180deg,#ffffff 0%,#fffdfa 55%,#ffffff 100%);
+    }
+    .top{
+      background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(161,122,63,.21);
+      box-shadow:0 6px 24px rgba(59,40,15,.055);
+    }
+    .name{color:#30271c}
+    .name b{color:#805418}
+    .mark{border-color:rgba(156,118,55,.38)}
+    .hero{background:linear-gradient(160deg,rgba(255,250,240,.76),rgba(255,255,255,0) 65%)}
+    .eyebrow{
+      color:#80571b;
+      background:#fff8ed;
+      border-color:rgba(160,113,38,.24);
+    }
+    .intro,.section-heading p,.cta p{color:var(--muted)}
+    .services-line span{
+      color:#5c4b36;
+      background:#fffbf5;
+      border-color:rgba(145,103,39,.23);
+    }
+    h1 em,h2,.card h3{color:var(--gold-strong)}
+    .hero-offer{
+      color:#77501b;
+      text-shadow:none;
+      animation:offerReveal 1.1s ease-out both,offerGlowLight 3.4s ease-in-out 1.1s infinite;
+    }
+    .hero-offer::after{
+      background:linear-gradient(90deg,transparent,rgba(158,110,37,.8),transparent);
+    }
+    .hero-offer .offer-price{
+      color:#ffffff;
+      border-color:#a16f23;
+      background:linear-gradient(135deg,#b58a3f,#865818);
+      box-shadow:0 9px 23px rgba(120,80,24,.23),inset 0 1px 0 rgba(255,255,255,.28);
+      text-shadow:0 1px 2px rgba(67,40,7,.24);
+      animation:pricePulseLight 2.3s ease-in-out infinite;
+    }
+    .hero-offer .offer-price::after{
+      background:linear-gradient(105deg,transparent 33%,rgba(255,244,211,.37) 48%,transparent 63%);
+    }
+    @keyframes offerGlowLight{
+      0%,100%{text-shadow:0 0 10px rgba(177,132,65,.08)}
+      50%{text-shadow:0 0 20px rgba(177,132,65,.28)}
+    }
+    @keyframes pricePulseLight{
+      0%,100%{transform:scale(1);box-shadow:0 8px 20px rgba(120,80,24,.20)}
+      50%{transform:scale(1.055);box-shadow:0 13px 30px rgba(120,80,24,.36)}
+    }
+    .hero-frame{
+      border-color:rgba(160,114,46,.36);
+      background:linear-gradient(140deg,#fffdf8,#f8efe0);
+      box-shadow:0 28px 58px rgba(82,56,21,.14);
+    }
+    .hero-frame img{background:#ffffff}
+    .hero-frame::after{border-color:rgba(191,152,85,.22)}
+    .card{
+      color:var(--text);
+      background:linear-gradient(150deg,#ffffff,#fcf7ee);
+      border-color:rgba(151,104,32,.25);
+      box-shadow:0 15px 35px rgba(91,62,26,.07);
+    }
+    .card p{color:#3a3228}
+    .showcase{
+      background:#ffffff;
+      border-color:rgba(153,110,49,.28);
+      box-shadow:0 17px 40px rgba(91,62,26,.11);
+    }
+    .compare-note{
+      background:#fff9ef;
+      color:#665b4b;
+      border-top:1px solid rgba(153,110,49,.16);
+    }
+    .cta{
+      background:linear-gradient(120deg,#fffdf9,#f9efde);
+      border-color:rgba(158,109,35,.36);
+      box-shadow:0 12px 32px rgba(91,62,26,.07);
+    }
+    footer{
+      background:#ffffff;
+      color:#665b4b;
+      border-top:1px solid rgba(153,110,49,.19);
+    }
+    footer b{color:#84591a}
+    .mobile{
+      background:rgba(255,255,255,.97);
+      border-color:rgba(157,110,39,.31);
+      box-shadow:0 8px 28px rgba(75,50,18,.13);
+    }
+    @media(prefers-reduced-motion:reduce){
+      .hero-offer,.hero-offer .offer-price{animation:none!important}
+    }
   </style>
 </head>
 <body>
